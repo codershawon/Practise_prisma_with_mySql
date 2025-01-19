@@ -5,7 +5,7 @@ const find = async () => {
 
 //   const getAllDataFromDB = await prisma.post.findMany();
 
-  const findFirst = await prisma.post.findFirstOrThrow({
+  const findFirst = await prisma.post.findFirst({
     where: { 
         id: 4
      }
